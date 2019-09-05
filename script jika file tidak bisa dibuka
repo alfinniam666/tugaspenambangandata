@@ -1,0 +1,34 @@
+import matplotlib.pyplot as mat
+from scipy import stats
+import pandas as data
+
+for i in range(4):
+    cek1=data.read_csv("ujicoba2.csv",usecols=[i])
+    c1= cek1.count()
+    print("Jumlah sel data = ",c1)
+    print(" ")
+    o1= cek1.mode()
+    print("modus = ",o1)
+    print(" ")
+    m1= cek1.mean()
+    print("mean = ",m1)
+    print(" ")
+    e1= cek1.median()
+    print("median = ",e1)
+    print(" ")
+    s1=cek1.std()
+    print("standar deviasi =",s1)
+    print(" ")
+    w1= cek1.skew()
+    print("skewwnes = ",s1)
+    print(" ")
+    Q1= cek1.quantile(0.25)
+    print("Kuartil awal = ",Q1)
+    print(" ")
+    Q2= cek1.quantile(0.50)
+    print("Kuartil tengah = ",Q2)
+    print(" ")
+    Q3= cek1.quantile(0.75)
+    print("Kuartil tengah = ",Q3)
+    print(" ")
+    sea.distplot(cek1);
